@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Food - Admin</title>
+    <link rel="stylesheet" href="../admin/add-food.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>🍔 Admin</h2>
+      <a href="index.html">Dashboard</a>
+      <a href="add-food.html">Add Food</a>
+      <a href="manage-food.html">Manage Food</a>
+      <a href="orders.html">Orders</a>
+      <a href="users.html">Users</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <div class="main">
+      <h1>Add New Food Item</h1>
+      <div class="secondmain">
+        <form id="foodForm1">
+          <div class="input-box">
+            <label for="name">Food Name</label>
+            <input type="text" id="name" placeholder="Enter food name" />
+          </div>
+
+          <div class="input-box">
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              placeholder="Enter food description"
+            ></textarea>
+          </div>
+
+          <div class="input-box">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="Fast Food">Fast Food</option>
+              <option value="Local Dish">Local Dish</option>
+              <option value="Pastries">Pastries</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label for="price">Price (GHS)</label>
+            <input type="number" id="price" placeholder="Enter price" />
+          </div>
+
+          <div class="input-box">
+            <label for="image">Image Upload</label>
+            <input type="file" id="image" />
+          </div>
+        </form>
+
+        <form id="foodForm2">
+          <div class="input-box">
+            <label for="ingredients">Ingredients</label>
+            <textarea
+              id="ingredients"
+              placeholder="Enter ingredients"
+            ></textarea>
+          </div>
+
+          <div class="input-box">
+            <label for="nutrition">Nutrition Info</label>
+            <textarea
+              id="nutrition"
+              placeholder="Enter nutrition info"
+            ></textarea>
+          </div>
+
+          <div class="input-box">
+            <label for="stock">Stock Availability</label>
+            <select id="stock">
+              <option value="Available">Available</option>
+              <option value="Out of Stock">Out of Stock</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">Add Food</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
